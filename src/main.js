@@ -23,8 +23,8 @@ export default async ({ req, res, log, error }) => {
     host: 'smtp.gmail.com',
     port: 465,
     auth: {
-      user: 'newtrial1234567@gmail.com', 
-      pass: 'ldzizfcmbtejsrkm ' 
+      user: '<sender>', 
+      pass: ' ' 
     }
   });
 
@@ -48,7 +48,7 @@ export default async ({ req, res, log, error }) => {
     return res.text("Email Sent!");
   }
   
-  sendMail('sriharihc733@gmail.com', "Subject", "<p>Hello, this is a test mail.</p>");
+  sendMail('<reciever>', "Subject", "<p>Hello, this is a test mail.</p>");
   return res.json({
     motto: "Build like a team of hundreds_",
     learn: "https://appwrite.io/docs",
